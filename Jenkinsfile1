@@ -1,4 +1,4 @@
-Node{
+node{
   stage('SCM CHeckout') {
   git'https://github.com/livingMabhijit/jenkinsnew.git'
   }
