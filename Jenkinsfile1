@@ -1,0 +1,12 @@
+Node{
+  stage('SCM CHeckout') {
+  git'https://github.com/livingMabhijit/jenkinsnew.git'
+  }
+  stage('Compile Packge'){
+  def mavnHome = tool name: 'Maven1', type: 'maven'
+  sh "${mvnHome}/bin/mvn"
+  }
+
+
+
+}
